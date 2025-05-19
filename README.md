@@ -83,11 +83,11 @@ To authorize an incoming user, the plugin needs to access the Google Admin API t
 ```yaml
 google:
   oauth:
-    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide> 
+    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide>
   service_account:
     email:    <Service Account Email from the "Create Service Account 'opkssh'" guide>
     key_file: <Path to API Key file from the "Create Service Account 'opkssh'" guide>
-  workspace:  
+  workspace:
     customer_id: <Customer ID from the "Create Service Account 'opkssh'" guide>
 ```
 
@@ -108,11 +108,11 @@ cache:
   duration: 15min
 google:
   oauth:
-    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide> 
+    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide>
   service_account:
     email:    <Service Account Email from the "Create Service Account 'opkssh'" guide>
     key_file: <Path to API Key file from the "Create Service Account 'opkssh'" guide>
-  workspace:  
+  workspace:
     customer_id: <Customer ID from the "Create Service Account 'opkssh'" guide>
 policy:
   foo:
