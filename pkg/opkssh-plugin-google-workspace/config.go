@@ -30,7 +30,7 @@ func LoadConfig(
 	pathCache string,
 	cacheDuration time.Duration,
 ) (*Config, error) {
-	// get absolue path to config file
+	// get absolute path to config file
 	abs, err := filepath.Abs(pathConfig)
 	if err != nil {
 		const message = "failed to get absolute path"

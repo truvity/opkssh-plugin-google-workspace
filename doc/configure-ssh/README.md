@@ -13,7 +13,7 @@
 A Google Administrator must complete the following guides:
 - [Create Google Cloud project "opkssh"](./../google-cloud-project/README.md)
 - [Create OAuth application "opkssh"](./../google-oauth-application/README.md)
-- [Create Service Account "opkssh"](./google-servive-account/README.md)
+- [Create Service Account "opkssh"](./google-service-account/README.md)
 
 On both the client and server sides, you must complete the guide:
 - [Install and configure "opkssh" (client and server)](#install-and-configure-opkssh-client-and-server)
@@ -26,7 +26,7 @@ Server side only:
   - [Configure "opkssh" on the server side](#configure-opkssh-on-the-server-side)
 - If you need group-based authorization:
   - [Install and configure "opkssh-plugin-google-workspace"](#install-and-configure-opkssh-plugin-google-workspace)
-  
+
 ## Guides
 
 ### Install and configure "opkssh" (client and server)
@@ -68,8 +68,8 @@ default_provider: google-workspace
 providers:
   - alias: google-workspace
     issuer: https://accounts.google.com
-    client_id:     <Client ID from the guide "Create OAuth application 'opkssh'"> 
-    client_secret: <Client Secret from the guide "Create OAuth application 'opkssh'"> 
+    client_id:     <Client ID from the guide "Create OAuth application 'opkssh'">
+    client_secret: <Client Secret from the guide "Create OAuth application 'opkssh'">
     scopes: openid email profile
     access_type: offline
     prompt: consent
@@ -85,7 +85,7 @@ EOF
 
 A Google Administrator must complete the following guides:
 - [Create Google Cloud project "opkssh"](./../google-cloud-project/README.md)
-- [Create Service Account "opkssh"](./google-servive-account/README.md)
+- [Create Service Account "opkssh"](./google-service-account/README.md)
 
 You must complete the guide:
 - [Install and configure "opkssh" (client and server)](#install-and-configure-opkssh-client-and-server)
@@ -114,7 +114,7 @@ sudo chmod 750 /usr/local/bin/opkssh-plugin-google-workspace
 
 # Connect the plugin to opkssh
 
-sudo cat >/etc/opk/policy.d/google-workspace.yml <<EOF
+sudo tee /etc/opk/policy.d/google-workspace.yml <<EOF
 name: Google Workspace
 command: /usr/local/bin/opkssh-plugin-google-workspace -v
 EOF
@@ -122,14 +122,14 @@ EOF
 sudo chown root:opksshuser /etc/opk/policy.d/google-workspace.yml
 
 # Configure opkssh-plugin-google-workspace
-sudo cat >/etc/opkssh-plugin-google-workspace/config.yaml <<EOF
+sudo tee /etc/opkssh-plugin-google-workspace/config.yaml <<EOF
 google:
   oauth:
-    client_id: <Client ID from the guide "Create OAuth application 'opkssh'"> 
+    client_id: <Client ID from the guide "Create OAuth application 'opkssh'">
   service_account:
     email:    <Service Account Email from the guide "Create Service Account 'opkssh'">
     key_file: <Path to API Key file from the guide "Create Service Account 'opkssh'">
-  workspace:  
+  workspace:
     customer_id: <Customer ID from the guide "Create Service Account 'opkssh'">
 policy:
   <linux user name>:

@@ -43,7 +43,7 @@ This plugin enables [opkssh](https://github.com/openpubkey/opkssh) to authentica
     - **Client ID** of the OAuth application
     - **Client Secret** of the OAuth application
 
-- [Create a Service Account "opkssh"](./doc/google-servive-account/README.md) to allow `opkssh-plugin-google-workspace` to perform group-based authorization of your employees on your servers. Complete this guide to obtain:
+- [Create a Service Account "opkssh"](./doc/google-service-account/README.md) to allow `opkssh-plugin-google-workspace` to perform group-based authorization of your employees on your servers. Complete this guide to obtain:
     - **Email** of the **Service Account**
     - **JSON file** with the **API Key** of the **Service Account**
     - **Customer ID** of **Google Workspace**
@@ -83,11 +83,11 @@ To authorize an incoming user, the plugin needs to access the Google Admin API t
 ```yaml
 google:
   oauth:
-    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide> 
+    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide>
   service_account:
     email:    <Service Account Email from the "Create Service Account 'opkssh'" guide>
     key_file: <Path to API Key file from the "Create Service Account 'opkssh'" guide>
-  workspace:  
+  workspace:
     customer_id: <Customer ID from the "Create Service Account 'opkssh'" guide>
 ```
 
@@ -108,11 +108,11 @@ cache:
   duration: 15min
 google:
   oauth:
-    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide> 
+    client_id: <Client ID from the "Create OAuth application 'opkssh'" guide>
   service_account:
     email:    <Service Account Email from the "Create Service Account 'opkssh'" guide>
     key_file: <Path to API Key file from the "Create Service Account 'opkssh'" guide>
-  workspace:  
+  workspace:
     customer_id: <Customer ID from the "Create Service Account 'opkssh'" guide>
 policy:
   foo:

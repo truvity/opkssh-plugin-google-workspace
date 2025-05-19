@@ -99,5 +99,5 @@ The outcome of this configuration will be:
   ![](./10-create-oauth-app-redirects.png)
 
 6. On the final screen, you will find your **Client ID** and **Client Secret**. You can click the highlighted button to **Copy** the field value or **Download** the JSON file containing this information.
-    
+
   ![](./11-create-oauth-app-info.png)
