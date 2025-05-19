@@ -43,7 +43,7 @@ This plugin enables [opkssh](https://github.com/openpubkey/opkssh) to authentica
     - **Client ID** of the OAuth application
     - **Client Secret** of the OAuth application
 
-- [Create a Service Account "opkssh"](./doc/google-servive-account/README.md) to allow `opkssh-plugin-google-workspace` to perform group-based authorization of your employees on your servers. Complete this guide to obtain:
+- [Create a Service Account "opkssh"](./doc/google-service-account/README.md) to allow `opkssh-plugin-google-workspace` to perform group-based authorization of your employees on your servers. Complete this guide to obtain:
     - **Email** of the **Service Account**
     - **JSON file** with the **API Key** of the **Service Account**
     - **Customer ID** of **Google Workspace**

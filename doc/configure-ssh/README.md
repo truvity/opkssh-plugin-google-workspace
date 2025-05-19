@@ -13,7 +13,7 @@
 A Google Administrator must complete the following guides:
 - [Create Google Cloud project "opkssh"](./../google-cloud-project/README.md)
 - [Create OAuth application "opkssh"](./../google-oauth-application/README.md)
-- [Create Service Account "opkssh"](./google-servive-account/README.md)
+- [Create Service Account "opkssh"](./google-service-account/README.md)
 
 On both the client and server sides, you must complete the guide:
 - [Install and configure "opkssh" (client and server)](#install-and-configure-opkssh-client-and-server)
@@ -85,7 +85,7 @@ EOF
 
 A Google Administrator must complete the following guides:
 - [Create Google Cloud project "opkssh"](./../google-cloud-project/README.md)
-- [Create Service Account "opkssh"](./google-servive-account/README.md)
+- [Create Service Account "opkssh"](./google-service-account/README.md)
 
 You must complete the guide:
 - [Install and configure "opkssh" (client and server)](#install-and-configure-opkssh-client-and-server)
