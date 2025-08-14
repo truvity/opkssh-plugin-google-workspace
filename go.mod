@@ -8,7 +8,7 @@ require (
 	github.com/caarlos0/env/v11 v11.3.1
 	github.com/gofrs/flock v0.12.1
 	github.com/urfave/cli/v3 v3.3.3
-	golang.org/x/oauth2 v0.25.0
+	golang.org/x/oauth2 v0.27.0
 	google.golang.org/api v0.169.0
 	gopkg.in/yaml.v3 v3.0.1
 )
